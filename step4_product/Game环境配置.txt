@@ -1,0 +1,11 @@
+
+
+// 配置less
+npm install -D less less-loader css-loader style-loader
+
+// 配置代码压缩
+npm i uglifyjs-webpack-plugin optimize-css-assets-webpack-plugin -D
+npm i uglifyjs-webpack-plugin -D
+
+// 样式表兼容低版本浏览器
+npm i -D postcss postcss-loader postcss-preset-env

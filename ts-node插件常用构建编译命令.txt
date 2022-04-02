@@ -1,0 +1,23 @@
+
+
+// 使用npm命令来全局安装，直接在命令行输入下面的命令：
+npm install -g ts-node
+yarn add -g ts-node
+
+
+// 编译ts文件命令
+tsc             // 编译所有的.ts文件 => *.js
+tsc hello.ts    // 编译指定.ts文件   => *.js
+tsc hello.ts -w // 实时监听变化, 实时编译.ts文件 => .js
+
+
+// webpack打包js代码
+npm init -y   // 生成package.json
+npm i -D webpack webpack-cli typescript ts-loader   // 开发依赖
+tsc --init    // 生成tsconfig.json
+npm run build // 编译打包
+
+npm i html-webpack-plugin -D            // 自动生成html文件
+npm i webpack-dev-server -D             // webpack开发服务器, 根据项目的改变自动去刷新
+npm i clean-webpack-plugin -D           // 打包清除dist目录, 保证打包代码最新
+npm i -D @babel/core @babel/preset-env babel-loader core-js // 打包代码兼容低版本浏览器
